@@ -2,13 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "libneon.dll"
+			"path" : "example.exe"
 		},
 		{
-			"path" : "libneon.dll.a"
-		},
-		{
-			"path" : "libneon.pdb"
+			"path" : "example.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -16,8 +13,7 @@
 	{
 		"commands" : 
 		[
-			"add_library",
-			"target_compile_definitions",
+			"add_executable",
 			"target_include_directories"
 		],
 		"files" : 
@@ -32,19 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 9,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 20,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 22,
+				"line" : 27,
 				"parent" : 0
 			}
 		]
@@ -58,20 +48,10 @@
 					"fragment" : "-g -std=c++23 -fdiagnostics-color=always"
 				}
 			],
-			"defines" : 
-			[
-				{
-					"backtrace" : 2,
-					"define" : "NEON_BUILD_DLL"
-				},
-				{
-					"define" : "neon_EXPORTS"
-				}
-			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"path" : "C:/Users/filan/CLionProjects/Neon/include"
 				}
 			],
@@ -86,16 +66,19 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				2
+				0
 			]
 		}
 	],
-	"id" : "neon::@6890427a1f51a3e7e1df",
+	"id" : "example::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -107,8 +90,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "neon",
-	"nameOnDisk" : "libneon.dll",
+	"name" : "example",
+	"nameOnDisk" : "example.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -120,15 +103,16 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				2
+				0
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				2,
+				3
 			]
 		}
 	],
@@ -147,10 +131,14 @@
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/main/cpp/test.cpp",
-			"sourceGroupIndex" : 0
+			"path" : "include/neon.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/neon/window.hpp",
+			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "SHARED_LIBRARY"
+	"type" : "EXECUTABLE"
 }

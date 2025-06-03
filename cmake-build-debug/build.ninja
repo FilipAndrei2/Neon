@@ -100,13 +100,6 @@ build CMakeFiles/example.dir/src/main/cpp/main.cpp.obj: CXX_COMPILER__example_un
   OBJECT_DIR = CMakeFiles\example.dir
   OBJECT_FILE_DIR = CMakeFiles\example.dir\src\main\cpp
 
-build CMakeFiles/example.dir/src/main/cpp/test.cpp.obj: CXX_COMPILER__example_unscanned_Debug C$:/Users/filan/CLionProjects/Neon/src/main/cpp/test.cpp || cmake_object_order_depends_target_example
-  DEP_FILE = CMakeFiles\example.dir\src\main\cpp\test.cpp.obj.d
-  FLAGS = -g -std=c++23 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/filan/CLionProjects/Neon/include
-  OBJECT_DIR = CMakeFiles\example.dir
-  OBJECT_FILE_DIR = CMakeFiles\example.dir\src\main\cpp
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target example
@@ -115,7 +108,7 @@ build CMakeFiles/example.dir/src/main/cpp/test.cpp.obj: CXX_COMPILER__example_un
 #############################################
 # Link the executable example.exe
 
-build example.exe: CXX_EXECUTABLE_LINKER__example_Debug CMakeFiles/example.dir/src/main/cpp/main.cpp.obj CMakeFiles/example.dir/src/main/cpp/test.cpp.obj
+build example.exe: CXX_EXECUTABLE_LINKER__example_Debug CMakeFiles/example.dir/src/main/cpp/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\example.dir

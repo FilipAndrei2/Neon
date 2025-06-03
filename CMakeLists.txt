@@ -15,7 +15,8 @@ add_library(neon SHARED
 add_executable(example src/main/cpp/main.cpp
         include/neon_export.hpp
         include/neon.hpp
-        src/main/cpp/test.cpp)
+        include/neon/window.hpp
+)
 
 target_compile_definitions(neon PUBLIC NEON_BUILD_DLL)
 

@@ -8,9 +8,9 @@
 #if defined _WIN32 || defined __CYGWIN__
   #ifdef NEON_BUILD_DLL
     #ifdef __GNUC__
-      #define NEON_API __attribute__ ((dllexport))
+      #define NEON_API extern "C" __attribute__ ((dllexport))
     #else
-      #define NEON_API __declspec(dllexport)
+      #define NEON_API extern "C"  __declspec(dllexport)
     #endif
   #else
     #ifdef __GNUC__
