@@ -1,0 +1,9 @@
+# ninja log v6
+65	178	7706552259673423	example.exe	117eddc8298f54eb
+9	1044	7706550550454459	CMakeFiles/example.dir/src/main/cpp/main.cpp.obj	f3dc3428685d0aa8
+25	1035	7706551860727370	CMakeFiles/neon.dir/src/main/cpp/main.cpp.obj	6489b45e5033cd77
+5	72	7706552259073875	CMakeFiles/neon.dir/src/main/cpp/test.cpp.obj	ecdde9787bfc8f0e
+72	178	7706552260709292	libneon.dll	afaaa813d5043307
+72	178	7706552260709292	libneon.dll.a	afaaa813d5043307
+2	291	7706565500333071	build.ninja	c337325c48c6faf9
+9	64	7706552259114488	CMakeFiles/example.dir/src/main/cpp/test.cpp.obj	c8ecad24436710ea
